@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <base href="capslock/">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Caps Lock Homepage</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+
+</head>
+<body data-ng-app="cpl">
+
+  <!--div nik-nav-bar></div-->
+
+  <div ui-view></div>
+
+  <!-- put md tabs here, use ng-if and named ui-views to implement swipe off screen then destroy  -->
+
+  <script src="bower_components/angular/angular.js"></script>
+
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+
+
+  <script src="app.js"></script>
+
+  <script src="views/home.js"></script>
+  <script src="views/one.js"></script>
+  <script src="views/two.js"></script>
+  <script src="views/three.js"></script>
+  <script src="views/four.js"></script>
+
+  <script src="components/nik-nav.js"></script>
+
+  <script src="services/works.js"></script>
+
+</body>
+</html>
