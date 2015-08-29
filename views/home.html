@@ -1,14 +1,16 @@
-<div class="toolbar">
-  <h3>CAPSLOCK Hi-Tech</h3>
-</div>
-<md-tabs md-selected="selectedIndex" class="md-primary">
-  <md-tab ng-repeat="item in home.toolItems" label="{{item.title}}">
-    <md-content class="md-padding">
-      <h1>{{item.title}}</h1>
-      <p>
-	{{item.content}}
-      </p>
-      <div ui-view="{{item.title}}"></div>
-    </md-content>
-  </md-tab>
-</md-tabs>
+<md-content>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <md-button class="md-icon-button" aria-label="Settings">
+	<md-icon md-svg-icon="icons/settings.svg"></md-icon>
+      </md-button>
+      <h2>
+	<span>NG-material generator app</span>
+      </h2>
+      <span flex></span>
+      <div ng-repeat="icon in ::home.icons track by icon.sref"
+	   nav-icon="{{::icon.file}}" nav-icon-sref="{{icon.sref}}"></div>
+    </div>
+  </md-toolbar>
+  <div ui-view></div>
+</md-content>
